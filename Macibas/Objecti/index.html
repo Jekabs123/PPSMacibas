@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+        }
+    </style>
 </head>
+
 <body>
     <script>
         function prece(nosaukums, cena, krasa, svars) {
@@ -14,8 +21,32 @@
             this.svars = svars;
         }
 
-        var keyboard = new prece("RGB Gaming keyboard", 200, "melna",230);
-        document.write(keyboard.nosaukums);
+        var keyboard = new prece("RGB Gaming keyboard", 200, "melna", 0.23);
+        //document.write(keyboard.nosaukums);
+    </script>
+    <div class="row">
+        <p>Nosaukums-</p>
+        <p id="nosaukums"></p>
+    </div>
+    <div class="row">
+        <p>Cena-</p>
+        <p id="cena"></p>
+    </div>
+    <div class="row">
+        <p>Krasa-</p>
+        <p id="krasa"></p>
+    </div>
+    <div class="row">
+        <p>Svars-</p>
+        <p id="svars"></p>
+    </div>
+
+    <script>
+        document.getElementById("nosaukums").innerText = keyboard.nosaukums;
+        document.getElementById("cena").innerText = keyboard.cena;
+        document.getElementById("krasa").innerText = keyboard.krasa;
+        document.getElementById("svars").innerText = keyboard.svars;
     </script>
 </body>
+
 </html>
