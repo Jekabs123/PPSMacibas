@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p id="a"></p>
-    <script>
-        var cipari = [3, -4, 6];
-        var lielakais = -100000;
-        function myFunction(item, index) {
-            if (item > lielakais){
-                lielakais = item;
-            }
-        }
-        cipari.forEach(myFunction);
-        document.getElementById("a").innerHTML = lielakais;
 
-    </script>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<p id="a"></p>
+	<script>
+		var cipari = [3, -4, 6];
+		var lielakais = -100000;
+
+		function myFunction(item, index) {
+			if (item > lielakais) {
+				lielakais = item;
+			}
+		}
+		cipari.forEach(myFunction);
+		document.getElementById("a").innerHTML = lielakais;
+	</script>
 </body>
+
 </html>
+		
