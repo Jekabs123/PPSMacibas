@@ -35,7 +35,7 @@
                                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQAyK6"
+                                        <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQAyK6" onclick="CountRickroll();"
                                             target="_blank">Second page</a>
                                     </li>
                                     <!--
@@ -67,8 +67,11 @@
 
                 </header>
 
-
-
+                <script>
+                    function CountRickroll(){
+                        document.getElementById("rickroll-counter").innerHTML = '<img src="//counter.websiteout.net/compte.php?S=rickrollcounter&C=24&D=0&N=0&M=0" alt="" border="0" /><p>How many people got rick rolled</p>';
+                    }
+                </script>
                 <div class="container text-center">
                     <div class="row">
                         <div class="content col-lg-12 mx-auto align-items-center">
@@ -123,7 +126,7 @@
 
             </div>
         </div>
-
+        <div id="rickroll-counter"></div><br><br><br>
         <footer class="container-fluid bg-black footer">
             <p><small>Jekabs © 2021</small></p>
         </footer>
